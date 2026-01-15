@@ -7,6 +7,10 @@ on:
     tags: ["v*"]
   pull_request:
 
+defaults:
+  run:
+    working-directory: my-python-test  # 根据需要修改为你的项目子目录
+
 jobs:
   test:
     runs-on: ubuntu-latest
