@@ -9,7 +9,7 @@ on:
 
 defaults:
   run:
-    working-directory: my-python-test  # 根据需要修改为你的项目子目录
+    working-directory: ${{ github.workspace }}
 
 jobs:
   test:
